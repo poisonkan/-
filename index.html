@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Chinese Mini App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>中文学习小程序</h1>
+        <p>面向外国学习者：词汇卡片 + 听读练习 + 小测验。</p>
+      </header>
+
+      <section class="card lesson-card">
+        <h2>1) 常用词汇卡片</h2>
+        <div class="vocab-display">
+          <p class="hanzi" id="hanzi">你好</p>
+          <p class="pinyin" id="pinyin">nǐ hǎo</p>
+          <p class="english" id="english">Hello</p>
+        </div>
+        <div class="actions">
+          <button id="prevBtn">上一条</button>
+          <button id="speakBtn">朗读</button>
+          <button id="nextBtn">下一条</button>
+        </div>
+      </section>
+
+      <section class="card quiz-card">
+        <h2>2) 词义选择题</h2>
+        <p>请选择中文词语 <strong id="quizWord">谢谢</strong> 的正确英文含义：</p>
+        <div id="quizOptions" class="options"></div>
+        <p id="quizFeedback" class="feedback"></p>
+        <button id="nextQuizBtn">下一题</button>
+      </section>
+
+      <section class="card tip-card">
+        <h2>3) 学习建议</h2>
+        <ul>
+          <li>先看汉字，再读拼音，最后联想英文含义。</li>
+          <li>每天 10 分钟重复练习，比一次学很久更有效。</li>
+          <li>可以点击“朗读”跟读，练习发音和语调。</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
